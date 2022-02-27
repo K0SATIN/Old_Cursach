@@ -1,19 +1,28 @@
 ﻿/*
  * Создано в SharpDevelop.
  * Пользователь: Konstantin
- * Дата: 21.02.2022
- * Время: 15:36
+ * Дата: 22.02.2022
+ * Время: 13:56
  * 
  * Для изменения этого шаблона используйте меню "Инструменты | Параметры | Кодирование | Стандартные заголовки".
  */
 using System;
-using System.Linq;
 
 namespace Cursach
 {
-    class Program
-    {
-        static void Rest(int[] A, int size, int indx)//конец просеивания пирамиды
+	/// <summary>
+	/// Description of ChoseSortAlgoritmt.
+	/// </summary>
+	/// причина для изменения: новый алгоритм сортировки. Выбор и реализация алгоритма сортировки
+	public class ChoseSortAlgoritmt
+	{		
+		
+		public ChoseSortAlgoritmt()
+		{
+		}
+		
+		int temp;
+		static void Rest(int[] A, int size, int indx)//конец просеивания пирамиды
         {        
                 int temp, c, s;
                 c = 2 * indx;
@@ -53,23 +62,23 @@ namespace Cursach
                        break;
                     c = 2 * indx;//проверяем, есть ли потомки у элемента, с которым произошёл обмен
                 }             
-        }
+        }	
+		
+		public int [] Int_Tournir(int [] A)
+		{
+			for (int n = A.Length / 2 - 1; n >= 0; n--)
+            {
+                Rest(A, A.Length, n);//просеивание дерева         
+            }
 
-        static void Main(string[] args)
-        {     
-            ArrayInput AI = new ArrayInput();
-            int[] A = AI.IntConsoleOutput();             
-			ChoseSortAlgoritmt Tournir = new ChoseSortAlgoritmt();
-			
-			ArrayOutput ConsolOutput = new ArrayOutput(Tournir.Int_Tournir(A));
-            ConsolOutput.ByConsole();
-			
-            //вот тут у нас должен быть алгоритм сортировки
-            //см. вот тут http://prog-cpp.ru/sort-pyramid/ http://algolist.manual.ru/sort/pyramid_sort.php
-            //далее должно быть так: берём первый элемент и последний, меняем их местами а потом просеиваем бывший последний элемент. 
-            //  Выбираем предпоследний элемент, меняем местами с первым и просеиваем, и так до конца массива. И ах да, тот алгоритм который я реализую сортирует по убыванию.           
-                       
-            
-        }
-    }
+            for (int j = A.Length - 1; j >= 1; j--)
+            {
+                temp = A[0];
+                A[0] = A[j];
+                A[j] = temp;
+                Rest(A, j, 0);
+            }
+            return A;	            
+		}
+	}
 }
