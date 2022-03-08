@@ -20,20 +20,21 @@ namespace Cursach
 		String reader;		
 		public ArrayInput()
 		{
-		}	
+		}
 
 		public int [] IntConsoleOutput()
 		{
 			Console.Write("Размер массива = ");
-            reader = Console.ReadLine();
-            size = Convert.ToInt32(reader);            
-            int[] A = new int[size];
-            for (int i = 0; i < A.Length; i++) //Цикл ввода элементов массива
-            {
-                Console.Write("Введите элемент массива A[{0}] = ", i);
-                A[i] = Convert.ToInt32(Console.ReadLine());
-            }            
-            return A;
+            		reader = Console.ReadLine();
+            		size = Convert.ToInt32(reader);            
+            		int[] A = new int[size];
+            		for (int i = 0; i < A.Length; i++) //Цикл ввода элементов массива
+            		{
+                		Console.Write("Введите элемент массива A[{0}] = ", i);
+                		A[i] = Convert.ToInt32(Console.ReadLine());
+            		}            
+            		return A;
 		}
+
 	}
 }

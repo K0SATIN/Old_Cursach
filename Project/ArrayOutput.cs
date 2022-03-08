@@ -20,14 +20,15 @@ namespace Cursach
 		public ArrayOutput(int [] OutsideArray)
 		{
 			Array = OutsideArray;
-		}		
+		}
+		
 		public void ByConsole()
 		{
 			for (int i = 0; i < Array.Length; i++) //Цикл вывода элементов массива
-            {
-                Console.WriteLine("Элемент массива A[{0}] = {1}", i, Array[i]);
-            }
-            Console.ReadKey();
+            		{
+                		Console.WriteLine("Элемент массива A[{0}] = {1}", i, Array[i]);
+            		}
+            		Console.ReadKey();
 		}
 	}
 }
