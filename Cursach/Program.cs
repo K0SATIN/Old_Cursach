@@ -17,8 +17,8 @@ namespace Cursach
         {     
         	ArrayInput AI = new ArrayInput();
         	int[] A = AI.IntConsoleOutput();             
-		ChoseSortAlgoritmt Tournir = new ChoseSortAlgoritmt();
-		ArrayOutput ConsolOutput = new ArrayOutput(Tournir.Int_Tournir(A));
+			ChoseSortAlgoritmt Tournir = new ChoseSortAlgoritmt();
+			ArrayOutput ConsolOutput = new ArrayOutput(Tournir.Int_Tournir(A));
            	ConsolOutput.ByConsole();       
         }
     }

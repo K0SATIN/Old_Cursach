@@ -1,0 +1,12 @@
+F:\C#_задачки\Cursach_Reborn\Cursach\Cursach\bin\Debug\Cursach.exe.config
+F:\C#_задачки\Cursach_Reborn\Cursach\Cursach\bin\Debug\Cursach.exe
+F:\C#_задачки\Cursach_Reborn\Cursach\Cursach\bin\Debug\Cursach.pdb
+F:\C#_задачки\Cursach_Reborn\Cursach\Cursach\obj\Debug\Cursach.csprojResolveAssemblyReference.cache
+F:\C#_задачки\Cursach_Reborn\Cursach\Cursach\obj\Debug\Cursach.exe
+F:\C#_задачки\Cursach_Reborn\Cursach\Cursach\obj\Debug\Cursach.pdb
+F:\Old_Cursach\Cursach\Cursach\bin\Debug\Cursach.exe.config
+F:\Old_Cursach\Cursach\Cursach\bin\Debug\Cursach.exe
+F:\Old_Cursach\Cursach\Cursach\bin\Debug\Cursach.pdb
+F:\Old_Cursach\Cursach\Cursach\obj\Debug\Cursach.csprojResolveAssemblyReference.cache
+F:\Old_Cursach\Cursach\Cursach\obj\Debug\Cursach.exe
+F:\Old_Cursach\Cursach\Cursach\obj\Debug\Cursach.pdb
